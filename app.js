@@ -17,9 +17,8 @@ app.get('/products', (req, res) => {
     res.status(200).json(products)
 })
 
-app.put('/products/:id', (req, res) => {
-    let products = { id: 1, name: 'Laptop Super' }
-    res.status(200).json(products)
+app.delete('/products/:id', (req, res) => {
+    res.status(200).json({ message: 'success delete product' })
 })
 
 
