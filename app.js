@@ -14,12 +14,12 @@ app.get('/products', (req, res) => {
         { id: 1, name: 'Laptop' },
         { id: 2, name: 'Keyboard' }
     ]
-    res.status(200).json(products)
 })
+console.log('hello world')
 
-app.put('/products/:id', (req, res) => {
-    let products = { id: 1, name: 'Laptop Super' }
-    res.status(200).json(products)
+app.delete('/products/:id', (req, res) => {
+    res.status(200).json({ message: 'success delete product' })
+    console.log('hello world')
 })
 
 
